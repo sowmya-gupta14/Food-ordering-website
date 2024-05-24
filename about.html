@@ -1,0 +1,509 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>about page</title>
+    
+
+    <link rel="stylesheet" type="text/css" href="about.css">
+    <link rel="stylesheet" type="text/css" href="careers.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css">
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
+
+    <style>
+        .hidden{
+            display: none;
+        }
+
+
+        
+        /* Add the CSS for top and left navbars */
+        .navbar-top {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            height: 74px;
+            z-index: 1;
+            position: fixed;
+            width: 100%;
+            top : 0px;
+            
+        }
+
+        .navbar-left {
+            position: fixed;
+            width: 86px;
+            box-shadow: 0 2px 6px 0 rgba(219,219,219,0.5);
+            background-color: #ededea;
+            align-items: center;
+            max-height: 100%;
+            min-height: 100%;
+            height: 100%;
+            top: 0;
+            transform: rotate(0deg);
+            transform-origin: top left;
+        }
+
+        /*.nav {
+            margin-top: 40px;
+            margin-left: 100px;
+           
+
+        }*/
+        .navbar-left .main-menu li a {
+            color: black;
+        }
+        
+        .btn-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 200px;
+        }
+
+        .show-btn {
+            padding: 10px 20px;
+            margin: 5px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            
+        }
+       
+    </style>
+
+    
+</head>
+
+
+
+<body style="background-color: rgba(242, 239, 234, 0.957);">
+    <div class="navbar-top">
+        <div class="row">
+            <div class="col-md-6">
+                <img class="logo" src="pictures/xero-logo.png" alt="">
+            </div>
+            <div class="col-md-6">
+                <ul class="nav-top-list">
+                    <li class="top-item">360 view</li>
+                    <li class="top-item">Offers</li>
+                    <li class="top-item">Contact Us</li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+
+    
+    <div class="navbar-left">
+        <ul class="main-menu">
+            <li style="transform: rotate(-90deg); margin-bottom: 60px;">
+                <a href="home1.html" style="text-decoration:none"  class="liN" >Home</a>
+            </li>
+            <li style="transform: rotate(-90deg); margin-bottom: 60px;">
+                <a href="#menu" style="text-decoration:none" class="liN">Menu</a>
+            </li>
+            <li style="transform: rotate(-90deg); margin-bottom: 60px;">
+                <a href="about.html" style="text-decoration:none" class="liN">About<br> Us</a>
+            </li>
+
+            <li style="transform: rotate(-90deg); margin-bottom: 60px;">
+                <a href="#section2" style="text-decoration:none" class="liN">Locations</a>
+            </li>
+
+            <li style="transform: rotate(-90deg); margin-bottom: 60px;" >
+                <a href="#section3" style="text-decoration:none" class="liN">franchise</a>
+            </li>
+            
+            <li style="transform: rotate(-90deg); margin-bottom: 60px;">
+                <a href="careers.html" style="text-decoration:none" class="liN">Careers</a>
+            </li>
+
+        </ul>
+    </div>
+</div>
+   
+    
+    <div class="Btns" >
+        <ul>
+
+            <li class="nav-item">
+                <button type="button" class="show-btn " id="btn1" onclick="showDiv(div1)">About
+                    Founders</button>
+            </li>
+
+            <li class="nav-item">
+                <button type="button" class="show-btn" id="btn2" onclick="showDiv(div2)">About
+                    company</button>
+            </li>
+
+            <li class="nav-item">
+                <button type="button" class="show-btn" id="btn3" onclick="showDiv(div3)">About
+                    value</button>
+            </li>
+
+            <li class="nav-item">
+                <button type="button" class="show-btn" id="btn4" onclick="showDiv(div4)">About
+                    team</button>
+            </li>
+
+        </ul>
+    </div> 
+
+    
+
+
+
+
+
+    <div class="content" id="div1">
+        <div class="container-fluid">
+    
+            <h2 class="abt-ttl">About Founders</h2>
+    
+            <div class="row middle" style="margin-left: 7px;">
+                <div class="col-md-6 founders-block">
+
+                    <div class="row">
+                        <div class="col-md-4">
+                            <img class="founders-img" src="pictures/Kashish-Aneja.jpg" alt="">
+                        </div>
+    
+                        <div class="col-md-4 f-name">
+                            <h4>Kashish</h4>
+                            <h4><span>Aneja</span></h4>
+                        </div>
+                    </div>
+    
+                    <div class="row">
+                        <div class="col-md-12">
+                            <p style="text-align: justify;">After a post-grad in marketing, and a couple months in a 9-5 gig, our founder Kashish Aneja,
+                                realised his affinity to the food industry. And like a true Foodpreneur, he went after this
+                                epiphany with all he had. And that crazy zeal, friends, has evolved from a cozy cafe in
+                                central Connaught Place into the thriving food chain that we all love today, Xero Degrees.
+                                <br>
+                                Starting and most importantly sustaining a restaurant in a cut-throat yet continuously
+                                evolving marketplace like Delhi comes with its own learnings, and currently with the smooth
+                                operational style of Xero Degree, we can say Kashish is well-equipped with the Logistical as
+                                well as Executive skill sets required to keep Xero Degrees always brimming with happy
+                                customers.
+                            </p>
+                        </div>
+                    </div>
+    
+                </div>
+    
+                <div class="col-md-6 founders-block">
+
+                    <div class="row">
+                        <div class="col-md-4">
+                            <img class="founders-img" src="pictures/Shivam-Kakkar.jpg" alt="">
+                        </div>
+    
+                        <div class="col-md-3 f-name">
+                            <h4>Shivam
+                            </h4>
+                            <h4><span>Kakkar</span></h4>
+                        </div>
+                    </div>
+    
+                    <div class="row">
+                        <div class="col-md-12">
+                            <p style="text-align: justify;">It all started the way back in 2015 while pursuing Chartered accountancy, and just one step
+                                away from completing his CA, Shivam decided to step into this business. With his passion and  
+                                fascination with the F&B industry, in 2018, they started their first outlet in Connaught  
+                                Place, New Delhi.  
+                                <br>  
+                                He believes finance is the core of everything that can get really technical and challenging  
+                                with GSTs, Income tax, mitigating risks like pandemic and policy changes. When it comes to  
+                                the HR department, he feels that it is much more than taking care of the staff of all the  
+                                outlets. He and his team try to build a positive and bias neutral culture to create an  
+                                employee-centric work environment. Though they have honest and transparent law compliant  
+                                practices, they recently introduced the legal affairs department to establish best legal
+                                practices and avoid unwanted challenges.
+                            </p>
+                        </div>
+                    </div>
+    
+                </div>
+                
+    
+            </div>
+    
+        </div>
+    
+    </div>
+
+
+
+
+
+
+    <div id="div2" class="content hidden">
+        <div class="container-fluid">
+
+            <h2 class="abt-ttl">About Company</h2>
+
+            <div class="row middle">
+                <div class="col-md-6">
+    
+                    <img class="company-img" src="pictures/company.png" alt="">
+    
+                </div>
+    
+                <div class="col-md-6">    
+                    <p>The brands ‘Xero Degrees’ & ‘Xero Courtyard’ are exclusively owned by Xero Degrees Cafe Private    
+                        limited. Xero Degrees was founded by Kashish Aneja & Shivam Kakkar in the year 2018. With multiple    
+                        locations across India, Xero Degrees is your new destination for mouth-watering and mind-blowing    
+                        food. Xero’s crazily Indianized American food will leave you craving for more. Enjoy well-crafted    
+                        piping hot recipes of spicy French fries, cheesy pizza slices, heavenly delicious drinks and    
+                        whatnot, in a warm and pleasant ambience created by Xero’s stunning interiors and decor. Xero    
+                        Degrees is not just a restaurant, but an escape from your busy life to “a world full of    
+                        happiness”The brands ‘Xero Degrees’ & ‘Xero Courtyard’ are exclusively owned by Xero Degrees Cafe    
+                        Private limited. Xero Degrees was founded by Kashish Aneja & Shivam Kakkar in the year 2018.            
+                        With multiple locations across India, Xero Degrees is your new destination for mouth-watering and    
+                        mind-blowing food. Xero’s crazily Indianized American food will leave you craving for more. Enjoy    
+                        well-crafted piping hot recipes of spicy French fries, cheesy pizza slices, heavenly delicious    
+                        drinks and whatnot, in a warm and pleasant ambience created by Xero’s stunning interiors and    
+                        decor.The brands ‘Xero Degrees’ & ‘Xero Courtyard’ are exclusively owned by Xero Degrees Cafe    
+                        Private limited. Xero Degrees was founded by Kashish Aneja & Shivam Kakkar in the year 2018. Xero    
+                        Degrees is not just a restaurant, but an escape from your busy life to “a world full of happiness”    
+                    </p>
+                </div>
+            </div>
+        </div>    
+    </div>
+
+
+
+
+
+
+<div id="div3" class="content hidden">
+    <div class="container-fluid">
+        <h2 class="abt-ttl">We stand with our values</h2>
+
+        <div class="row middle">
+
+            <div class="col-md-3 flash-card">
+                <div class="val-card" style="background-image: url('pictures/value1.png');">
+                    
+                    <div class="card-label" id="card-label1">
+                        <h3 class="card-head" style="font-family:monospace;">
+                            Experience
+                        </h3>
+                    </div>
+                    <div class="card-matter" id="card-matter1">
+                        <p>Hailing from a completely different background, the founders have gained experience in the
+                            F&B industry through their own research and learnings over the course of their journey of 3
+                            years and counting.</p>
+                    </div>
+                </div>
+                
+            </div>
+
+            <div class="col-md-3 flash-card">
+                <div class="val-card" style="background-image: url('pictures/value2.png');">
+
+                    <div class="card-label" id="card-label1">
+                        <h3 class="card-head" style="font-family:monospace;">
+                            Environment
+                        </h3>
+                    </div>
+
+                    <div class="card-matter" id="card-matter1">
+                        <p>We believe that an employee’s wellbeing is imperative to his/her overall performance at work
+                            and it is our duty to ensure work-life balance.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3 flash-card">
+                <div class="val-card" style="background-image: url('pictures/value3.png');">
+
+                    <div class="card-label" id="card-label1">
+                        <h3 class="card-head" style="font-family:monospace;">
+                            Quality
+                        </h3>
+                    </div>
+
+                    <div class="card-matter" id="card-matter1">
+                        <p>Whether it’s the quality of food, the quality of our equipment, or the quality of our
+                            outlets, we ensure that the bencmark set by our brand is an example for the industry.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3 flash-card">
+                <div class="val-card" style="background-image: url('pictures/value4.png');">
+
+                    <div class="card-label" id="card-label1">
+                        <h3 class="card-head" style="font-family:monospace;">
+                            Food Mood
+                        </h3>
+                    </div>
+
+                    <div class="card-matter" id="card-matter1">
+                        <p>It would be safe to say that our kitchen is where gourmet dreams come true! Lucky for us, we
+                            can have endless conversations about our unanimous love for all things food.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+
+<div id="div4" class="content hidden">
+    <div class="container-fluid">
+        <h2 class="abt-ttl">Our Team</h2>
+
+        <div class="row middle">
+            <div class=" col-md-2 ">
+                <div class="white-card">
+                    <img class="team-img" src="pictures/Narinder-Kumar (1).jpg" alt="">
+                    <div class="dtls">
+                        <h5>
+                            Narinder Kumar   </h5>
+                        <h6>
+                            Corporate General Manager    </h6>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class=" col-md-2 ">
+                <div class="white-card">
+                    <img class="team-img" src="pictures/Xero-Degrees-Vikash-Kumar.jpg" alt="">
+                    <div class="dtls">
+                        <h5>
+                            Vikash Kumar </h5>
+                        <h6>
+                            Corporate General Manager </h6>
+                    </div>
+                </div>
+            </div>
+            <div class=" col-md-2 ">
+                <div class="white-card">
+                    <img class="team-img" src="pictures/Gaurika-Bubber.jpg" alt="">
+                    <div class="dtls">
+                        <h5>
+                            Gaurika Bubber   </h5>
+                        <h6>
+                            Brand Manager    </h6>
+                    </div>
+                </div>
+            </div>
+            <div class=" col-md-2 ">
+                <div class="white-card">
+                    <img class="team-img" src="pictures/Anushka-Sethi.jpg" alt="">
+                    <div class="dtls">
+                        <h5>
+                            Anushka Sethi   </h5>
+                        <h6>
+                            Sr. Business Development and Marketing Manager    </h6>
+                    </div>
+                </div>
+            </div>
+            <div class=" col-md-2 ">
+                <div class="white-card">
+                    <img class="team-img" src="pictures/Xero-Degrees-Rishant-Joshi.jpg" alt="">
+                    <div class="dtls">
+                        <h5>
+                            Rishant Joshi   </h5>
+                        <h6>
+                            HR Manager    </h6>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="row middle">
+            <div class=" col-md-2 ">
+                <div class="white-card">
+                    <img class="team-img" src="pictures/Xero-Degrees-Vinay-Khanna.jpg" alt="">
+                    <div class="dtls">
+                        <h5>
+                            Vinay Khanna   </h5>
+                        <h6>
+                            Financial Manager    </h6>
+                    </div>
+                </div>
+            </div>
+            <div class=" col-md-2 ">
+                <div class="white-card">
+                    <img class="team-img" src="pictures/Xero-Degrees-Rohan-Makkar.jpg" alt="">
+                    <div class="dtls">
+                        <h5>
+                            Rohan Makkar   </h5>
+                        <h6>
+                            Business Development Manager    </h6>
+                    </div>
+                </div>
+            </div>
+            <div class=" col-md-2 ">
+                <div class="white-card">
+                    <img class="team-img" src="pictures/arun-lakhwan.jpg" alt="">
+                    <div class="dtls">
+                        <h5>
+                            Arun Lakhwan  </h5>
+                        <h6>
+                            Quality Manager    </h6>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        
+    </div>
+</div>
+
+
+    <div class="footer">
+        <div class="row bottom">
+
+            <div class="col-md-12">
+                <h3 class="footer">Trademark “XD Xero Degrees” is owned by Kashish Aneja and Shivam Kakkar
+                    <br><span>Copyright © 2023 Xero Degrees Cafe Private Limited</span>
+
+                </h3>
+
+                <br>
+
+                <p class="footer-links">
+                    <a href="">Terms & Conditions</a>
+                    | <a href="">Privacy policy</a>
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="about.js"></script>
+
+</body>
+
+
+
+</html>

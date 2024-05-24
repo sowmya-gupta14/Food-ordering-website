@@ -1,0 +1,14 @@
+.card-head{
+    font-family: monospace;
+    font-size: 20px;
+    text-shadow: black 3px 3px 5px;
+}
+
+.card-matter p{
+    text-shadow: black 2px 5px 5px;
+}
+
+.details{
+    padding-left: 33px;
+    padding-top: 7px;
+}

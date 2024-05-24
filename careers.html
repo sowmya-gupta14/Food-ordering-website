@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>careers page</title>
+
+    <link rel="stylesheet" type="text/css" href="about.css">
+    <link rel="stylesheet" type="text/css" href="careers.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css">
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
+
+    <style>
+        .hidden{
+            display: none;
+        }
+        /* Add the CSS for top and left navbars */
+        .navbar-top {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            height: 74px;
+            z-index: 1;
+            position: fixed;
+            width: 100%;
+            top : 0px;
+            
+        }
+
+        .navbar-left {
+            position: fixed;
+            width: 86px;
+            box-shadow: 0 2px 6px 0 rgba(219,219,219,0.5);
+            background-color: #ededea;
+            align-items: center;
+            max-height: 100%;
+            min-height: 100%;
+            height: 100%;
+            top: 0;
+            transform: rotate(0deg);
+            transform-origin: top left;
+        }
+
+        /*.nav {
+            margin-top: 40px;
+            margin-left: 100px;
+           
+
+        }*/
+        .navbar-left .main-menu li a {
+            color: black;
+        }
+        
+        .btn-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 200px;
+        }
+
+        .show-btn {
+            padding: 10px 20px;
+            margin: 5px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            
+        }
+        
+    </style>
+
+</head>
+
+
+
+<body style="background-color: rgba(242, 239, 234, 0.957);">
+<div class="navbar-top">
+    <div class="row">
+        <div class="col-md-6">
+            <img class="logo" src="pictures/xero-logo.png" alt="">
+        </div>
+        <div class="col-md-6">
+            <ul class="nav-top-list">
+                <li class="top-item">360 view</li>
+                <li class="top-item">Offers</li>
+                <li class="top-item">Contact Us</li>
+            </ul>
+        </div>
+    </div>
+
+</div>
+
+
+<div class="navbar-left">
+    <ul class="main-menu">
+        <li style="transform: rotate(-90deg); margin-bottom: 60px;">
+            <a href="home1.html" style="text-decoration:none" class="liN">Home</a>
+        </li>
+        <li style="transform: rotate(-90deg); margin-bottom: 60px;">
+            <a href="#menu" style="text-decoration:none" class="liN">Menu</a>
+        </li>
+        <li style="transform: rotate(-90deg); margin-bottom: 60px;">
+            <a href="about.html" style="text-decoration:none" class="liN">About<br> Us</a>
+        </li>
+
+        <li style="transform: rotate(-90deg); margin-bottom: 60px;">
+            <a href="#section2" style="text-decoration:none" class="liN">Locations</a>
+        </li>
+
+        <li style="transform: rotate(-90deg); margin-bottom: 60px;">
+            <a href="#section3" style="text-decoration:none" class="liN">franchise</a>
+        </li>
+
+        <li style="transform: rotate(-90deg); margin-bottom: 60px;">
+            <a href="#section4" style="text-decoration:none" class="liN">Careers</a>
+        </li>
+
+    </ul>
+</div>
+</div>
+
+    <div class="Btns" style="margin-left: -767px!important;">
+        <ul>
+
+            <li class="nav-item">
+                <button type="button" class="show-btn" id="btn1" onclick="showDiv(div1)">Details</button>
+            </li>
+
+            <li class="nav-item">
+                <button type="button" class="show-btn" id="btn2" onclick="showDiv(div2)">Perks&benefits</button>
+            </li>
+
+        </ul>
+    </div>
+
+    <div id="div1" class="content">
+        <div class="container-fluid">
+
+            <h2 class="abt-ttl">We are growing</h2>
+
+            <div class="row middle">
+                <div class="col-md-6">
+    
+                    <img class="career-img" style="width: 680px;" src="pictures/career_details_new.jpg" alt="" >
+    
+                </div>
+    
+                <div class="col-md-6">    
+                    <p class="details">
+                    There is no denying it, our food scientists at Xero Degrees have been spoiled by their freedom to try out new whacky yet lovable dishes to serve, and this is not anything new for the brand-makers of Xero Degrees. The Delhi boy-duo of Kashish Aneja and Shivam Kakkar started the Restaurant chain in 2018 with one thing in mind: let there be cheese! Plenty of cheese!
+                    <br>
+                    What they’ve built today is an eatery that started offering true-blue American cuisine to its young audience in the hippest part of Delhi.    
+                    </p>
+                </div>
+            </div>
+        </div>    
+    </div>
+
+
+    <div id="div2" class="content hidden">
+        <div class="container-fluid">
+            <h2 class="abt-ttl">Enjoy benefits that are made for you</h2>
+    
+            <div class="row middle">
+    
+                <div class="col-md-3 flash-card">
+                    <div class="val-card" style="background-image: url('pictures/got_you_covered.jpg');">
+                        
+                        <div class="card-label" id="card-label1">
+                            <h3 class="card-head" style="font-family:monospace;">
+                                Relax! we've got you covered
+                            </h3>
+                        </div>
+                        <div class="card-matter" id="card-matter1">
+                            <p>At Xero Degrees, we believe that we are all a part of one big family and that's exactly how we treat everyone associated with our brand.</p>
+                        </div>
+                    </div>
+                    
+                </div>
+    
+                <div class="col-md-3 flash-card">
+                    <div class="val-card" style="background-image: url('pictures/value2.png');">
+    
+                        <div class="card-label" id="card-label1">
+                            <h3 class="card-head" style="font-family:monospace;">
+                                Work-life balance
+                            </h3>
+                        </div>
+    
+                        <div class="card-matter" id="card-matter1">
+                            <p>We strongly believe in the saying, 'all work and no play makes Jack a dull boy.' Thus you'll always find the members at Xero Degrees striving for a work-life balance through monthly HR Activities, milestone celebrations, rooftop sessions, and lots more.</p>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="col-md-3 flash-card">
+                    <div class="val-card" style="background-image: url('pictures/value_our_people.jpg');">
+    
+                        <div class="card-label" id="card-label1">
+                            <h3 class="card-head" style="font-family:monospace;">
+                                We value our people
+                            </h3>
+                        </div>
+    
+                        <div class="card-matter" id="card-matter1">
+                            <p>Whether it is from a professional perspective or a personal one, we ensure that we are there for each other through thick and thin. When we say that we are one big family, we actually believe in it.</p>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="col-md-3 flash-card">
+                    <div class="val-card" style="background-image: url('pictures/we_give_back.jpg');">
+    
+                        <div class="card-label" id="card-label1">
+                            <h3 class="card-head" style="font-family:monospace;">
+                                We give back
+                            </h3>
+                        </div>
+    
+                        <div class="card-matter" id="card-matter1">
+                            <p>We understand that rewards and recognition play an important role for our employees and keep them motivated to always put their best foot forward. Also, we have one of the best Incentive structures as per Industry standards.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+    
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="row bottom">
+
+            <div class="col-md-12">
+                <h3 class="footer">Trademark “XD Xero Degrees” is owned by Kashish Aneja and Shivam Kakkar
+                    <br><span>Copyright © 2023 Xero Degrees Cafe Private Limited</span>
+
+                </h3>
+
+                <br>
+
+                <p class="footer-links">
+                    <a href="">Terms & Conditions</a>
+                    | <a href="">Privacy policy</a>
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="about.js"></script>
+
+</body>
+
+
+
+</html>
+
+
+
+
